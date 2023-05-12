@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;  
+    box-sizing: border-box;
+    border: 1px dashed hotpink;
+}
+
+header {
+    text-align: center;
+    margin: 50px auto;
+}
+
+h1 {
+    padding: 20px;
+    text-decoration: line-through;
+}
+form {
+    margin: 20px auto;
+    display: block;
+    max-width: 500px;
+    width: 100%;
+}
+form input, button{
+    height: 30px;
+}
+
+input{
+    padding-left: 15px;
+    width: 260px;
+}
+button {
+    width: 150px;
+}
+
+
+ul {
+    padding: 200px;
+    background-color: beige;
+}
+ul li{
+    padding-bottom: 10px;
+}
+
+ul li::marker {
+    color: purple;
+}
+
+ul li:hover {
+    cursor: pointer;
+}
+
+ul li a{
+    color: black;
+}
+.riscado {
+    text-decoration: line-through;
+}
