@@ -12,7 +12,6 @@ header {
 
 h1 {
     padding: 20px;
-    text-decoration: line-through;
 }
 form {
     margin: 20px auto;
@@ -49,9 +48,6 @@ ul li:hover {
     cursor: pointer;
 }
 
-ul li a{
-    color: black;
-}
 .riscado {
     text-decoration: line-through;
 }
