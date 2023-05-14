@@ -1,31 +1,40 @@
 $(document).ready(function(){
 
     $('header button').click(function(e){
-        $('form').slideDown();
+        $('.container').slideDown();
 
     })
     
     $('#recolher').click(function(){
-        $('form').slideUp();
+        $('.container').slideUp();
     })
 
-    $('form').on('submit', function(e){
+    $('.container').on('submit', function(e){
         e.preventDefault();
 
-        const inputTarefa = $('#colocando-nova-tarefa').val();
-        console.log(inputTarefa)
-        const novaTarefa = $(`<li>${inputTarefa}</li>`);
-        $(novaTarefa).appendTo('ul');
-        $('#colocando-nova-tarefa').val('');
-    })
-    
-    $('.ul-body').click(function(){
-        const inputTarefa = $('#colocando-nova-tarefa').val();
+        
+        $('<ul>').appendTo('form');
 
-        const riscarTarefa = $(`<li>${inputTarefa}</li>`);
-        $(riscarTarefa).addClass('riscado');
-        console.log(riscarTarefa);
+        // não está passando o valor de <li>;
+        $('<ul>').on('click', function(){
+            const inputTarefa = $('#colocando-nova-tarefa').val();
 
+            if (inputTarefa != inputTarefa){
+                console.log(inputTarefa)
+                const novaTarefa = $(`<li>${inputTarefa}</li>`);
+                $(novaTarefa).appendTo('ul');
+                console.log('elemento1');
+                
+                $(novaTarefa).on('click', function(){
+                    const liRisc = $(novaTarefa).toggleClass('riscado');
+                    console.log('elemento2')
+                })
+                $('#colocando-nova-tarefa').val(' ');
+            }
+        })
+       
     })
+
+   
 
 })
