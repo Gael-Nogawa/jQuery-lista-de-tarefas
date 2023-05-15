@@ -6,7 +6,7 @@
     border: 1px dashed hotpink;
     */
     font-family: 'Poppins', sans-serif;
-
+ 
 }
 
 header {
@@ -16,13 +16,14 @@ header {
 }
 
 header button{
-    background-color: rgb(244, 244, 27);
-    border-radius: 20px;
-    font-size: 18px;
-    font-weight: 700;
     width: 300px;
     height: 40px;
-    border: 1px solid beige;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 20px;
+    background-color: rgb(109, 163, 109);
+    border: 1px solid green;
+    color: #f3f3f3;
 }
 
 h1 {
@@ -51,11 +52,17 @@ p {
     justify-content: space-between;
 }
 
-input{
+p input{
     padding-left: 15px;
     width: 260px;
 }
-button {
+
+p input::placeholder {
+    color: gray;
+    text-align: start;
+}
+
+p button {
     width: 150px;
 }
 
@@ -70,19 +77,21 @@ ul {
     border-radius: 10px;
 }
 ul li{
-    padding-bottom: 10px;
+    padding: 10px;
     font-size: 16px;
     letter-spacing: 1.5px;
     text-transform: capitalize;
 }
 
 ul li::marker {
-    color: purple;
+    color: gray;
     
 }
 
 ul li:hover {
     cursor: pointer;
+    background-color: antiquewhite;
+    border-radius: 10px;
 }
 
 .riscado {
@@ -96,4 +105,5 @@ ul li:hover {
     align-items: center;
     justify-content: center;
     margin: 10px auto;
+    width: 150px;
 }
