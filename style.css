@@ -2,9 +2,6 @@
     padding: 0;
     margin: 0;  
     box-sizing: border-box;
-    /*
-    border: 1px dashed hotpink;
-    */
     font-family: 'Poppins', sans-serif;
  
 }
@@ -12,7 +9,6 @@
 header {
     text-align: center;
     margin: 50px auto;
-
 }
 
 header button{
@@ -28,8 +24,8 @@ header button{
 
 h1 {
     padding: 20px;
-   
-}
+   }
+
 form {
     margin: 18px auto;
     display: block;
@@ -66,7 +62,6 @@ p button {
     width: 150px;
 }
 
-
 ul {
 
     max-width: 400px;
@@ -96,7 +91,6 @@ ul li:hover {
 
 .riscado {
     text-decoration: line-through;
-    
     color: rgba(0,0,0, 0.5);
 }
 
