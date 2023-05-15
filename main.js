@@ -12,26 +12,18 @@ $(document).ready(function(){
     $('.container').on('submit', function(e){
         e.preventDefault();
 
+        const inputTarefa = $('#colocando-nova-tarefa').val();
+
+        console.log(inputTarefa)
+        const novaTarefa = $(`<li>${inputTarefa}</li>`);
+        $(novaTarefa).appendTo('ul');
+        console.log('elemento1');
         
-        $('<ul>').appendTo('form');
-
-        // não está passando o valor de <li>;
-        $('<ul>').on('click', function(){
-            const inputTarefa = $('#colocando-nova-tarefa').val();
-
-            if (inputTarefa != inputTarefa){
-                console.log(inputTarefa)
-                const novaTarefa = $(`<li>${inputTarefa}</li>`);
-                $(novaTarefa).appendTo('ul');
-                console.log('elemento1');
-                
-                $(novaTarefa).on('click', function(){
-                    const liRisc = $(novaTarefa).toggleClass('riscado');
-                    console.log('elemento2')
-                })
-                $('#colocando-nova-tarefa').val(' ');
-            }
+        $(novaTarefa).on('click', function(){
+            const liRisc = $(novaTarefa).toggleClass('riscado');
+            console.log('elemento2')
         })
+        $('#colocando-nova-tarefa').val(' ');
        
     })
 

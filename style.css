@@ -6,6 +6,7 @@
     border: 1px dashed hotpink;
     */
     font-family: 'Poppins', sans-serif;
+
 }
 
 header {
@@ -41,6 +42,7 @@ form p input, button, #recolher{
     border-radius: 10px;
     border: none;
     font-size: 15px;
+    background-color: beige;
 }
 
 p {
@@ -59,8 +61,13 @@ button {
 
 
 ul {
+
+    max-width: 400px;
+    width: 100%;
+    margin: 20px 0 10px 50px;
     padding: 10px;
-    background-color: beige;
+    background-color: #fff;
+    border-radius: 10px;
 }
 ul li{
     padding-bottom: 10px;
